@@ -1,10 +1,7 @@
 function imgSlider(anything) {
     document.querySelector('.sign').src = anything;
 
-    //getting image name
     var sign = getSignName();
-
-    document.querySelector('.title').innerHTML = "<span>" + sign + "</span>";
 
     getDescription(sign);
 }
@@ -28,6 +25,7 @@ function getDescription(sign) {
         for (var i = 0; i < signs.length; i++) {
             if (signs[i].name === sign) {
                 document.querySelector(".desc").innerHTML = signs[i].description;
+                document.querySelector('.title').innerHTML = "<span>" + sign + "</span>";
             }
         }
     }
