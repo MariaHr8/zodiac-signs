@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -14,6 +15,13 @@
         <div class="circle"></div>
         <header>
             <a href="#"><img class="logo" src="./images/astrology.png"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sun</a></li>
+                <li><a href="#">Moon</a></li>
+                <li><a href="#">Rising</a></li>
+            </ul>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sun</a></li>
@@ -33,7 +41,7 @@
         </div>
         <ul class="thumb">
             <li><img src="./images/aries.png" onclick="imgSlider('./images/aries.png')"></li>
-            <li><img src="./images/taurus.png" onclick="script.imgSlider('./images/taurus.png')"></li>
+            <li><img src="./images/taurus.png" onclick="imgSlider('./images/taurus.png')"></li>
             <li><img src="./images/gemini.png" onclick="imgSlider('./images/gemini.png')"></li>
             <li><img src="./images/cancer.png" onclick="imgSlider('./images/cancer.png')"></li>
             <li><img src="./images/leo.png" onclick="imgSlider('./images/leo.png')"></li>
