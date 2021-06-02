@@ -80,7 +80,6 @@ header ul li a {
     margin-top: 20px;
     padding: 8px 20px;
     background: rgb(221, 174, 240);
-    ;
     color: #fff;
     border-radius: 40px;
     font-weight: 500;
@@ -93,7 +92,7 @@ header ul li a {
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .content .imgBox img {

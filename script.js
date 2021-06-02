@@ -1,9 +1,10 @@
 function imgSlider(anything) {
     document.querySelector('.sign').src = anything;
 
+    /* 
     var sign = getSignName();
-
-    getDescription(sign);
+    getDescription(sign); 
+    */
 }
 
 function getSignName() {
@@ -38,3 +39,21 @@ function toggleMenu() {
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
 }
+
+function guessTime() {
+    // 
+    var x = document.forms["birthForm"]["birth-time"].value;
+    console.log(x);
+    event.preventDefault();
+
+    // logic for finding out the sun sign
+    var date = new Date(x);
+    var sign;
+    console.log(date.getDate());
+    console.log(date.getMonth() + 1);
+    if (date.getDate());
+    // adding it to the interface
+    document.querySelector('.sign').innerHTML = sign;
+}
+
+function handleForm(event) { event.preventDefault(); }
