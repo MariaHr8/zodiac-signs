@@ -1,13 +1,13 @@
 function imgSlider(anything) {
     document.querySelector('.sign').src = anything;
-
-    /* 
     var sign = getSignName();
-    getDescription(sign); 
-    */
+    document.querySelector('.signtext').innerHTML = sign;
+
+    // getDescription(sign); 
+
 }
 
-function getSignName() {
+function getSignName(src) {
     var filePN = event.target.src;
     var fileName = filePN.split("/");
     var final = fileName[4].split(".");
@@ -40,20 +40,51 @@ function toggleMenu() {
     navigation.classList.toggle('active');
 }
 
-function guessTime() {
-    // 
-    var x = document.forms["birthForm"]["birth-time"].value;
-    console.log(x);
+function guessSign() {
+    //async
     event.preventDefault();
 
-    // logic for finding out the sun sign
-    var date = new Date(x);
-    var sign;
-    console.log(date.getDate());
-    console.log(date.getMonth() + 1);
-    if (date.getDate());
-    // adding it to the interface
-    document.querySelector('.sign').innerHTML = sign;
-}
+    // getting data from the form
+    var date = new Date(document.forms["birthForm"]["birth-time"].value);
+    var day = date.getDate();
+    var month = date.getMonth() + 1; //starts from 0
 
-function handleForm(event) { event.preventDefault(); }
+    // logic for finding out the sign
+    var sign;
+
+    if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+        sign = "Aquarius";
+    } else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
+        sign = "Pisces";
+    } else if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+        sign = "Aries";
+    } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+        sign = "Taurus";
+    } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+        sign = "Gemini";
+    } else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+        sign = "Cancer";
+    } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+        sign = "Leo";
+    } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+        sign = "Virgo";
+    } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+        sign = "Libra";
+    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+        sign = "Scorpio";
+    } else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
+        sign = "Sagittarius";
+    } else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+        sign = "Capricorn";
+    } else {
+        console.log("no month");
+    }
+
+    // adding it to the interface
+    document.querySelector('.signtext').innerHTML = sign;
+    var path = "./images/" + sign.toLowerCase() + ".png";
+
+    // change big image
+    document.querySelector('.sign').src = path;
+
+}

@@ -205,6 +205,6 @@ header ul li a {
     }
     /*change*/
     .thumb li img {
-        max-width: 40px;
+        max-width: 20px;
     }
 }
