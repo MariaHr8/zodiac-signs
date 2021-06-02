@@ -133,6 +133,24 @@ header ul li a {
     clip-path: circle(700px at right 800px);
 }
 
+#submitBtn {
+    color: #FFF;
+    background: rgb(221, 174, 240);
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgb(221, 174, 240);
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+input {
+    border-radius: 10px;
+}
+
 @media (max-width: 991px) {
     header {
         padding: 20px;

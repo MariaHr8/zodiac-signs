@@ -1,10 +1,10 @@
 function imgSlider(anything) {
     document.querySelector('.sign').src = anything;
+
     var sign = getSignName();
     document.querySelector('.signtext').innerHTML = sign;
 
     // getDescription(sign); 
-
 }
 
 function getSignName(src) {
