@@ -1,0 +1,23 @@
+{
+    "name": "zodiac-signs",
+    "version": "1.0.0",
+    "description": "Node Astrology Website",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MariaHr8/zodiac-signs.git"
+    },
+    "author": "Maria Hristova",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MariaHr8/zodiac-signs/issues"
+    },
+    "homepage": "https://github.com/MariaHr8/zodiac-signs#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}

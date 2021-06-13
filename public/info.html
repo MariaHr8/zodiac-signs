@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zodiac Signs</title>
+</head>
+
+<body>
+    <section>
+        <!--navigation-->
+        <header>
+            <a href="#"><img class="logo" src="/public/images/astrology.png"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sun</a></li>
+                <li><a href="#">Moon</a></li>
+                <li><a href="#">Rising</a></li>
+            </ul>
+        </header>
+
+        <!--information panel-->
+        <div class="information">
+            <div class="textBox">
+                <div class="overview">
+                    <h3 id="signName"></h3>
+                    <h3> Characteristics</h3>
+                </div>
+                <div class="career">
+                    <h3> Career</h3>
+                </div>
+                <div class="love">
+                    <h3> Love </h3>
+                </div>
+                <div class="compatibleS">
+                    <h3> Compatibles</h3>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <ul class="thumb">
+            <li><img src="./images/aries.png" onclick="imgSlider('./images/aries.png')"></li>
+            <li><img src="./images/taurus.png" onclick="imgSlider('./images/taurus.png')"></li>
+            <li><img src="./images/gemini.png" onclick="imgSlider('./images/gemini.png')"></li>
+            <li><img src="./images/cancer.png" onclick="imgSlider('./images/cancer.png')"></li>
+            <li><img src="./images/leo.png" onclick="imgSlider('./images/leo.png')"></li>
+            <li><img src="./images/virgo.png" onclick="imgSlider('./images/virgo.png')"></li>
+            <li><img src="./images/libra.png" onclick="imgSlider('./images/libra.png')"></li>
+            <li><img src="./images/scorpio.png" onclick="imgSlider('./images/scorpio.png')"></li>
+            <li><img src="./images/sagittarius.png" onclick="imgSlider('./images/sagittarius.png')"></li>
+            <li><img src="./images/capricorn.png" onclick="imgSlider('./images/capricorn.png')"></li>
+            <li><img src="./images/aquarius.png" onclick="imgSlider('./images/aquarius.png')"></li>
+            <li><img src="./images/pisces.png" onclick="imgSlider('./images/pisces.png')"></li>
+        </ul>
+    </section>
+    <!--javascript-->
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="informationLoad.js"></script>
+</body>
+
+</html>
