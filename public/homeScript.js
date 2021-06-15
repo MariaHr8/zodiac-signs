@@ -80,4 +80,5 @@ function guessSign() {
     // change big image
     document.querySelector('.sign').src = path;
 
+
 }
